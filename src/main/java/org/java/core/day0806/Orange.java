@@ -2,6 +2,23 @@ package org.java.core.day0806;
 
 public class Orange extends AbstractFruit {
 
+	{
+		System.out.println("\t构造代码块Orange-A");
+	}
+
+	public Orange() {
+		//super();
+		System.out.println("\tOrange无参数构造器实例化");
+	}
+
+	{
+		System.out.println("\t构造代码块Orange-B");
+	}
+
+	static {
+		System.out.println("\tOrange静态代码块执行");
+	}
+
 	@Override
 	public String getName() {
 		return "橙子";

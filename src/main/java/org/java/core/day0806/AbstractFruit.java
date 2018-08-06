@@ -2,6 +2,21 @@ package org.java.core.day0806;
 
 public abstract class AbstractFruit implements Fruit {
 
+	public AbstractFruit() {
+		super();
+		System.out.println("AbstractFruit无参数构造器实例化");
+	}
+
+	static {
+		System.out.println("AbstractFruit静态代码块start");
+		init();
+		System.out.println("AbstractFruit静态代码块end");
+	}
+
+	private static void init() {
+		System.out.println("AbstractFruit执行初始化init方法");
+	}
+
 	public String description() {
 		StringBuilder builder = new StringBuilder();
 		builder.append("【");
@@ -15,5 +30,5 @@ public abstract class AbstractFruit implements Fruit {
 	}
 
 	protected abstract String getFactory();
-	
+
 }

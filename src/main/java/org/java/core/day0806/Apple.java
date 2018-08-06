@@ -2,6 +2,23 @@ package org.java.core.day0806;
 
 public class Apple extends AbstractFruit {
 
+	{
+		System.out.println("\t构造代码块Apple-A");
+	}
+
+	public Apple() {
+		super();
+		System.out.println("\tApple无参数构造器实例化");
+	}
+
+	{
+		System.out.println("\t构造代码块Apple-B");
+	}
+
+	static {
+		System.out.println("\tApple静态代码块执行");
+	}
+
 	@Override
 	public String getName() {
 		return "苹果";
