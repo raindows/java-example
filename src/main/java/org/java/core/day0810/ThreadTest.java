@@ -27,20 +27,24 @@ public class ThreadTest {
 
 class ThreadImpl01 extends Thread {
 
+	private static final Logger LOG = LoggerFactory.getLogger(ThreadImpl01.class);
+
 	@Override
 	public void run() {
 		Thread thread = Thread.currentThread();
-		System.out.printf("%s %s\n", thread.getName(), thread.getId());
+		LOG.info("name:{}  id:{}", thread.getName(), thread.getId());
 	}
 
 }
 
 class ThreadImpl02 implements Runnable {
 
+	private static final Logger LOG = LoggerFactory.getLogger(ThreadImpl02.class);
+
 	@Override
 	public void run() {
 		Thread thread = Thread.currentThread();
-		System.out.printf("%s %s\n", thread.getName(), thread.getId());
+		LOG.info("name:{}  id:{}", thread.getName(), thread.getId());
 	}
 
 }
