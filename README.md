@@ -15,6 +15,7 @@ mvn archetype:generate -DgroupId=org.java -DartifactId=java-example -DarchetypeA
 
 ### 基本数据类型
 
+    byte int long short string char float double
     基本类型位数，自动装箱，常量池
     
     例如byte类型是8位，可以表示的数字是-128到127，因为还有一个0，加起来一共是256，也就是2的八次方。
