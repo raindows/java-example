@@ -13,6 +13,8 @@ import org.mybatis.generator.internal.DefaultShellCallback;
  * 
  * <p>
  * Main
+ * 
+ * http://www.mybatis.org/generator/quickstart.html
  * </p>
  *
  * @author xiaoyu.wang

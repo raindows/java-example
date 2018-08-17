@@ -11,6 +11,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import com.alibaba.fastjson.JSON;
 
 /**
+ * http://www.mybatis.org/mybatis-3/zh/index.html
+ * 
+ * http://www.mybatis.org/generator/quickstart.html
  * 
  * @author xiaoyu.wang
  */
